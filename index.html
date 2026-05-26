@@ -81,13 +81,12 @@
           hasScored = true;
           // Tăng điểm trên UI (ở đây lấy ví dụ tăng lên 1, bạn có thể dùng localStorage để lưu)
           scoreEl.innerText = "1"; 
-          alert("Chúc mừng! Bạn đã mở khóa nhiệm vụ Bản đồ trận chiến 1!");
         }
       });
 
       // Sự kiện: Khi người dùng đưa camera ra chỗ khác (mất dấu bản đồ)
       target1El.addEventListener("targetLost", event => {
-        console.log("Mất dấu bản đồ!");
+        alert("Mất dấu bản đồ!");
         video1.pause(); // Tạm dừng video để tiết kiệm hiệu năng
       });
     </script>
